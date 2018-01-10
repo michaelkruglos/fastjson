@@ -7,12 +7,12 @@ The `Unmarshal` and `Decode` functions are faster, but everything else is the sa
 ```
 $go get github.com/intel-go/fastjson
 ```
-##Perfomance
+## Perfomance
 The performance depends on the content of your json structures, not the structure you parse to.
 If `.json` has a lot of strings or numbers, fastjson is significantly faster than `encoding/json`
 
 
-##Example
+## Example
 ```Go
 import (
     "github.com/intel-go/fastjson"
@@ -38,6 +38,6 @@ func main() {
     // [{Name:Platypus Order:Monotremata} {Name:Quoll Order:Dasyuromorphia}]
 }
 ```
-##API
+## API
 API is the same as encoding/json
 [GoDoc](https://golang.org/pkg/encoding/json/#Unmarshal)
